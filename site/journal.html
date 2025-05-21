@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал - EasyAccess</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Шапка */
+        header.nav-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header.nav-header h1 {
+            text-align: center;
+            font-size: 28px;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        nav ul li.active a {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+        }
+
+        /* Основное содержимое */
+        main {
+            padding: 40px 0;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        .photo-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+            justify-content: center;
+        }
+        
+        .photo-card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            background: white;
+        }
+        
+        .photo-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .photo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background: #f5f5f5;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .photo-description {
+            padding: 15px;
+        }
+        
+        .full-width-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            margin: 20px 0;
+            border-radius: 8px;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+        }
+        
+        figure {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+        }
+        
+        .section-divider {
+            border-top: 2px solid #eee;
+            margin: 40px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="nav-header">
+        <div class="container">
+            <h1>EasyAccess</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="active"><a href="journal.html">Журнал</a></li>
+                    <li><a href="members.html">Участники</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="partners.html">Партнеры</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Проект EasyAccess - Анализ веб-доступности</h1>
+        
+        <section>
+            <h2>Главная концепция</h2>
+            <img src="Рисунок 1.png" alt="Схема работы расширения EasyAccess" class="full-width-img">
+            <p>Расширение EasyAccess преобразует неадаптированные сайты в доступные версии с помощью CSS и JavaScript инъекций.</p>
+        </section>
+        
+        <div class="section-divider"></div>
+        
+        <section>
+            <h2>Архитектура проекта</h2>
+            <div class="photo-container">
+                <div class="photo-card">
+                    <img src="Рисунок 2.png" alt="Архитектура базы данных">
+                    <div class="photo-description">
+                        <h3>База данных</h3>
+                        <p>Структура хранения данных пользователей и настроек доступности</p>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="Рисунок.png" alt="Анализ доступности">
+                    <div class="photo-description">
+                        <h3>Анализ WCAG</h3>
+                        <p>Оценка соответствия стандартам веб-доступности</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-divider"></div>
+        
+        <section>
+            <h2>Интерфейс расширения</h2>
+            <div class="photo-container">
+                <div class="photo-card">
+                    <img src="Рисунок 3.png" alt="Установленные пакеты">
+                    <div class="photo-description">
+                        <h3>Управление пакетами</h3>
+                        <p>Интерфейс для активации/деактивации пакетов улучшений</p>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="Рисунок 4.png" alt="Магазин пакетов">
+                    <div class="photo-description">
+                        <h3>Магазин пакетов</h3>
+                        <p>Раздел для поиска и установки новых пакетов доступности</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-divider"></div>
+        
+        <section>
+            <h2>План разработки</h2>
+            <figure>
+                <img src="Рисунок 5.png" alt="График реализации проекта" style="max-width: 100%;">
+                <figcaption>Рис. 1 - График реализации проекта EasyAccess с этапами разработки</figcaption>
+            </figure>
+            <p>Полный цикл разработки от анализа до финального тестирования и внедрения.</p>
+        </section>
+    </main>
+    
+    <footer class="container">
+        <p>&copy; 2025 EasyAccess.</p>
+    </footer>
+</body>
+</html>

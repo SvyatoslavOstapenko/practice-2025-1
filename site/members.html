@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники проекта - EasyAccess</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #3498db, #2ecc71);
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Шапка */
+        header.nav-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header.nav-header h1 {
+            text-align: center;
+            font-size: 28px;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        nav ul li.active a {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+        }
+
+        /* Основное содержимое */
+        main {
+            padding: 40px 0;
+        }
+
+        h1, h2 {
+            color: white;
+            margin-top: 1.5em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .poem {
+            white-space: pre-line;
+            padding: 2em;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            line-height: 2;
+            font-size: 1.1em;
+        }
+
+        .participant {
+            display: inline-block;
+            width: 100%;
+            padding: 5px 0;
+            transition: transform 0.2s;
+        }
+
+        .participant:hover {
+            transform: translateX(10px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 1.1em;
+            color: white;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="nav-header">
+        <div class="container">
+            <h1>EasyAccess</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="journal.html">Журнал</a></li>
+                    <li class="active"><a href="members.html">Участники</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="partners.html">Партнеры</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Руководитель проекта</h1>
+        <div class="poem">
+            <div class="participant">Киреева Галина Ивановна</div>
+            <div class="participant">Будылиной Евгении Александровны</div>
+        </div>
+
+        <h1>Участники нашего проекта</h1>
+        
+        <div class="poem">
+            <div class="participant">Остапенко Владислав Русланович</div>
+            <div class="participant">Деев Егор Викторович</div>
+            <div class="participant">Момина Антонина Алексеевна</div>
+            <div class="participant">Мясников Дмитрий Сергеевич</div>
+            <div class="participant">Николенко Дарья Романовна</div>
+            <div class="participant">Ночной Максим Сергеевич</div>
+            <div class="participant">Остапенко Святослав Русланович</div>
+            <div class="participant">Пахалюк Илья Николаевич</div>
+            <div class="participant">Петрачков Владимир Владимирович</div>
+            <div class="participant">Поправкин Александр Валентинович</div>
+            <div class="participant">Сапрыкин Петр Иванович</div>
+            <div class="participant">Старков Руслан Владимирович</div>
+            <div class="participant">Трошкин Дмитрий Александрович</div>
+            <div class="participant">Шмыговский Никита Сергеевич</div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2025 EasyAccess.</p>
+    </footer>
+</body>
+</html>
